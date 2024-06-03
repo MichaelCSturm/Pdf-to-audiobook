@@ -14,12 +14,7 @@ for page_num in range(len(pdfreader.pages)):
     audiobook = audiobook + cleaned_text
     
     
-    # if( cleaned_text.find("Chapter 1 Introduction") or  cleaned_text.find("Chapter 2 The Graphics Rendering Pipeline") or cleaned_text.find("Chapter 3 The Graphics Processing Unit") or
-    #    cleaned_text.find("") or cleaned_text.find("") or cleaned_text.find("") or
-    #    cleaned_text.find("") or cleaned_text.find("") or cleaned_text.find("") or
-    #    cleaned_text.find("") or cleaned_text.find("") or cleaned_text.find("") or
-    #    cleaned_text.find("") or cleaned_text.find("") or cleaned_text.find("") ):
-    #     fileName = str(numChapter)+ ".mp3" 
+
 
     speaker.save_to_file(cleaned_text,"Page" +str(numChapter) +".mp3")  ## Saving Text In a audio file 'story.mp3' 
     speaker.runAndWait()
